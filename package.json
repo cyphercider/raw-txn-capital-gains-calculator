@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
-    "run": "node ./dist/main.js"
+    "run": "node ./dist/main.js",
+    "build": "tsc",
+    "start": "npm run build && npm run run"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +18,6 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "csv-writer": "^1.6.0",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
